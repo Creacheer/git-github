@@ -18,4 +18,4 @@ Learning or do other things.<br>
 * 查看仓库状态（有没有提交给坂本管理）：$ git status
 * 查看修改后的和之前的差别：$git diff
 
-2.
+2.为全球恶其
