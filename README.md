@@ -13,9 +13,12 @@ Learning or do other things.<br>
 
 ### Lessen 2 : Edition managenation
 
-1.在修改文档后：
+1.在修改文档后
 
 * 查看仓库状态（有没有提交给坂本管理）：$ git status
 * 查看修改后的和之前的差别：$git diff
 
-2.为全球恶其
+2.版本回退
+
+*版本树：
+
