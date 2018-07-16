@@ -20,5 +20,6 @@ Learning or do other things.<br>
 
 2.版本回退
 
-*版本树：
+* 版本树（HEADtree）：HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id(or HEAD^ or HEAD~100)。
 
+![something wrong]
