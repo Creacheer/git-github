@@ -20,5 +20,15 @@ Learning or do other things.<br>
 
 2.版本回退
 
-*版本树：
+* 版本树（HEADtree）：HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id(or HEAD^ or HEAD~100)。
+
+![something wrong](https://github.com/Creacheer/git-github/blob/master/picture/headtree.png)
+
+* 穿梭前，查看版本树，以便确定要回退到哪个版本:$ git log
+* 查看命令历史:$ git reflog
+
+3.Working Direction & Storage Cache
+
+* 工作区（repository）中有隐藏的版本库（.git），版本库中有暂存区，add先将改变存到暂存区，commit再将改动从暂存区的内容提交到当前分支中
+
 
