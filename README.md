@@ -22,7 +22,7 @@ Learning or do other things.<br>
 
 * 版本树（HEADtree）：HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id(or HEAD^ or HEAD~100)。
 
-![something wrong](https://github.com/Creacheer/git-github/blob/master/picture/headtree.png)
+![->this](https://github.com/Creacheer/git-github/blob/master/picture/headtree.png)
 
 * 穿梭前，查看版本树，以便确定要回退到哪个版本:$ git log
 * 查看命令历史:$ git reflog
@@ -67,5 +67,24 @@ Learning or do other things.<br>
 * 将网络Repository clone到本地：$ git clone git@github.com:michaelliao/gitskills.git（michaelliao为Github的用户名）
 * git除了git：//的SSH协议，还支持https协议（使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。）：$ git clone git https://github.com/michaelliao/gitskills.git（不确定）
   
-### Branch Management
+### Lessen 4 : Branch Management
 
+1.Creat & Merge Branches
+
+* 创建分支指针，并切换到分支指针（使HEAD指向分支指针）：$ git checkout -b <name of branch> (= $ git branch <name of branch>; $ git checkout <name of branch>）
+* 查看分支：$ git branch
+* 切回master：$ git checkout master
+* 合并分支：$ git merge <name of branch>
+* 删除分支：$ git branch -d <name of branch>
+
+2.Conflict Resolution
+
+* 当出现合并冲突时，可以在master里面手动修改冲突，再提交（本质其实就是普通的改变）
+* 查看分支合并图：$ git log --graph --pretty=oneline --abbrev-commit
+
+3.Branch Management Strategy
+
+* 通常，合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。只需在合并分支时加上"--no-ff": $ git merge --no-ff -m "merge without ff" <name of branch>
+* Strategy:Master主要用于新版本发布，平时干活在Branch上面，最后合并发布新版本。
+  
+ 
