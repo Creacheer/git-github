@@ -9,7 +9,7 @@ Learning or do other things.<br>
 
 （操作 -> 提交版本管理（Edition managenation））
 * 添加文件：$ git add <file>
-* 提交版本管理：$ git commit -m <message>
+* 提交版本管理：$ git commit -m "<message>"
 
 ### Lessen 2 : Edition managenation
 
@@ -50,6 +50,11 @@ Learning or do other things.<br>
   
 5.Delete Files
 
-* 删除版本库文件（和add一样）：$
+* 删除版本库文件（和add一样）：$ git remove <file>, and $ git commit -m "<message>"
+* 假如被删除了（但库里面没有被删），可以恢复到最新版本：$ git checkout -- <file>
+  
+### Lessen 3 : Remote Repository
+
+1.
   
  
