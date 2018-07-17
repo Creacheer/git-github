@@ -31,7 +31,7 @@ Learning or do other things.<br>
 
 * 工作区（repository）中有隐藏的版本库（.git），版本库中有暂存区，add先将改变存到暂存区，commit再将改动从暂存区的内容提交到当前分支中
 
-！[something wrong](https://github.com/Creacheer/git-github/blob/master/picture/W%26S1.png) 
+![](https://github.com/Creacheer/git-github/blob/master/picture/W%26S1.png)
 
 $ git add -> 
 ![something wrong](https://github.com/Creacheer/git-github/blob/master/picture/W%26S2.png)
