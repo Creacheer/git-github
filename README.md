@@ -55,6 +55,17 @@ Learning or do other things.<br>
   
 ### Lessen 3 : Remote Repository
 
-1.
+1.Add Remote Repository
+
+* 将SSH key添加到远程服务端（Github），这样，Github就可以接收本地的通信
+* 将本地的Repository添加到Github中：$ git remote add origin git@github.com:michaelliao/learngit.git（其中michaelliao为Github账户名）
+* 把本地库的所有内容推送到远程库上：$ git push -u origin master
+* 每个Repository进行前两步后，把本地master分支的最新修改推送至GitHub：$ git push origin master
+
+2.Clone From Remote Repository
+
+* 将网络Repository clone到本地：$ git clone git@github.com:michaelliao/gitskills.git（michaelliao为Github的用户名）
+* git除了git：//的SSH协议，还支持https协议（使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。）：$ git clone git https://github.com/michaelliao/gitskills.git（不确定）
   
- 
+### Branch Management
+
