@@ -39,3 +39,7 @@ Learning or do other things.<br>
 
 3.Manage Modification
 
+* 没有add，即将修改从工作区添加到版本库的storage，在后面的commit时，修改就不会被提交到master（版本）里面
+
+4.
+
