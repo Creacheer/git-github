@@ -33,8 +33,3 @@ Learning or do other things.<br>
 
 ![](https://github.com/Creacheer/git-github/blob/master/picture/W%26S1.png)
 
-$ git add -> 
-![something wrong](https://github.com/Creacheer/git-github/blob/master/picture/W%26S2.png)
-$ git commit ->
-！[something wrong](https://github.com/Creacheer/git-github/blob/master/picture/W%26S3.png)
-
