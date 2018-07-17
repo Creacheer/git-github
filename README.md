@@ -24,5 +24,9 @@ Learning or do other things.<br>
 
 ![something wrong](https://github.com/Creacheer/git-github/blob/master/picture/headtree.png)
 
-* 穿梭前，用git log可以查看版本树，以便确定要回退到哪个版本。
-* git reflog查看命令历史
+* 穿梭前，查看版本树，以便确定要回退到哪个版本:$ git log
+* 查看命令历史:$ git reflog
+
+3.Working Direction & Storage Cache
+
+
