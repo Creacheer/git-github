@@ -29,4 +29,6 @@ Learning or do other things.<br>
 
 3.Working Direction & Storage Cache
 
+* 工作区（repository）中有隐藏的版本库（.git），版本库中有暂存区，add先将改变存到暂存区，commit再将改动从暂存区的内容提交到当前分支中
+
 
