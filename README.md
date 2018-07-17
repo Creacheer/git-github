@@ -89,7 +89,21 @@ Learning or do other things.<br>
  
 ![->this](https://github.com/Creacheer/git-github/blob/master/picture/BranchWork.png)
 
-4.
+4.BUG Branch
+
+* 修复BUG分支，通过创建新的BUG分支进行修复，然后合并删除
+* 当前工作没有完成时（Working Direction和Storage Cache没有提交），通过stash功能先存储当前工作现场（因为所有分支共享Working Direction和Storagy Cache,在跳转到另一分支时并不会新建这两个区域并保存当前信息以便回来时恢复现场，所以需要手动完成这一步骤）：`$ git stach`
+* 查看存储现场：`$ git stash lis`
+* 恢复现场两种方式：
+** 恢复后不删除stash内容，需`$ git stash drop`删除内容：`$ git stash apply( <stash编号，例如：stash@{0}>)`
+** 恢复并删除恢复的stash内容：`git stash pop`
+
+5.Feature Branch
+
+* Feature Branch是指每开发一个功能都建一个Feature分支，在上面开发。
+* 没有合并的分支强行删除：`$ git branch -D feature-<name of branch>`
+
+6.
  
 ### Label Management
 
@@ -97,7 +111,7 @@ Learning or do other things.<br>
 
 * 先切换到需要打标签的分支上（否则就是当前分支当前commit），然后打标签：`$ git tag <Label>`
 * 查看s所有标签：`$ git Label`
-* 打以前commit的标签，需要查看历史提交的commit id：`$ git log --pretty=oneline --abbrev-commit`；然后再对目标commit id打标签：$ git tag <标签> <commit id>
+* 打以前commit的标签，需要查看历史提交的commit id：`$ git log --pretty=oneline --abbrev-commit`；然后再对目标commit id打标签：`$ git tag <标签> <commit id>`
 * 查看标签信息：`$ git show <Label>`
 * 创建有Description的标签：`$ git tag -a <Label> -m "<Description>" <commit id>`
   
