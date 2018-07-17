@@ -95,15 +95,24 @@ Learning or do other things.<br>
 * 当前工作没有完成时（Working Direction和Storage Cache没有提交），通过stash功能先存储当前工作现场（因为所有分支共享Working Direction和Storagy Cache,在跳转到另一分支时并不会新建这两个区域并保存当前信息以便回来时恢复现场，所以需要手动完成这一步骤）：`$ git stach`
 * 查看存储现场：`$ git stash lis`
 * 恢复现场两种方式：<br>
-** 恢复后不删除stash内容，需`$ git stash drop`删除内容：`$ git stash apply( <stash编号，例如：stash@{0}>)`
-** 恢复并删除恢复的stash内容：`git stash pop`
+  * 恢复后不删除stash内容，需`$ git stash drop`删除内容：`$ git stash apply( <stash编号，例如：stash@{0}>)`
+  * 恢复并删除恢复的stash内容：`git stash pop`
 
 5.Feature Branch
 
 * Feature Branch是指每开发一个功能都建一个Feature分支，在上面开发。
 * 没有合并的分支强行删除：`$ git branch -D feature-<name of branch>`
 
-6.
+6.Mutiplayer Collaboration
+
+* 当从远程仓库clone时，远程仓库的默认名称为`origin`，只默认clone`Master`分支，clone其他分支：`$ git checkout -b <name of branch> origin/<name of branch>`
+* push branch：`$ git push origin <name of branch>`
+* pull branch：`$ git pull`,假设pull失败（可能是因为最新版的branch和本地branch没有链接），需要和远程库branch链接：`$ git branch --set-upstreamto=origin/<name of branch> <name of branch>`
+* 假如合并冲突，解决冲突，提交，再push
+
+7.Rebase
+
+* 将历史分叉合并为一个直线（但会导致commit修改版本基于的版本发生变化）：`$ git rebase`
  
 ### Label Management
 
@@ -117,5 +126,8 @@ Learning or do other things.<br>
   
 2.Operations Of Label
 
-* 
+* 删除Label：`$ git tag -d <name of label>`
+* 推送单个标签到远程库：`$ git push origin <name of label>`
+* 推送所有尚未推送的标签：`$ git push origin --tags`
+* 如果标签已经推送给远程库，删除标签则需先删除本地标签，再从远程删除：`$ git push origin :refs/tags/<name of label>`
 
