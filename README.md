@@ -50,6 +50,6 @@ Learning or do other things.<br>
   
 5.Delete Files
 
-
+* 删除版本库文件（和add一样）：$
   
-  
+ 
