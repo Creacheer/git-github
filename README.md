@@ -86,5 +86,8 @@ Learning or do other things.<br>
 
 * 通常，合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。只需在合并分支时加上"--no-ff": $ git merge --no-ff -m "merge without ff" <name of branch>
 * Strategy:Master主要用于新版本发布，平时干活在Branch上面，最后合并发布新版本。
-  
+ 
+![->this](https://github.com/Creacheer/git-github/blob/master/picture/BranchWork.png)
+
+4.
  
