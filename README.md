@@ -41,5 +41,15 @@ Learning or do other things.<br>
 
 * 没有add，即将修改从工作区添加到版本库的storage，在后面的commit时，修改就不会被提交到master（版本）里面
 
-4.
+4.Undo edit
 
+* 将working direction的修改撤销：$ git checkout -- <file>
+* 将storage的修改回退到working direction（然后再重复上面的步骤即可撤销修改）：$ git reset HEAD（表示当前最新版本） <file>
+* 假如已经提交版本，想撤销，则参考版本回退的内容（前提是没有提交到远程库）
+* git status中的Changes not staged for commit就是指还没有add，即指working direction有修改，但storage没有commit，即没有提交进去；Changes to be committed指storage有修改，即没有上传到版本库中，需要git commit。
+  
+5.Delete Files
+
+
+  
+  
