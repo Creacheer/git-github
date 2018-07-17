@@ -36,3 +36,6 @@ Learning or do other things.<br>
 ![->this](https://github.com/Creacheer/git-github/blob/master/picture/W%26S2.png)
 
 ![->this](https://github.com/Creacheer/git-github/blob/master/picture/W%26S3.png)
+
+3.Manage Modification
+
