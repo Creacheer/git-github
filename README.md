@@ -91,3 +91,17 @@ Learning or do other things.<br>
 
 4.
  
+### Label Management
+
+1.Creat Label
+
+* 先切换到需要打标签的分支上（否则就是当前分支当前commit），然后打标签：$ git tag <Label>
+* 查看s所有标签：`$ git Label`
+* 打以前commit的标签，需要查看历史提交的commit id：`$ git log --pretty=oneline --abbrev-commit`；然后再对目标commit id打标签：$ git tag <标签> <commit id>
+* 查看标签信息：`$ git show <Label>`
+* 创建有Description的标签：`$ git tag -a <Label> -m "<Description>" <commit id>`
+  
+2.Operations Of Label
+
+* 
+
