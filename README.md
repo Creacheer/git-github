@@ -94,7 +94,7 @@ Learning or do other things.<br>
 * 修复BUG分支，通过创建新的BUG分支进行修复，然后合并删除
 * 当前工作没有完成时（Working Direction和Storage Cache没有提交），通过stash功能先存储当前工作现场（因为所有分支共享Working Direction和Storagy Cache,在跳转到另一分支时并不会新建这两个区域并保存当前信息以便回来时恢复现场，所以需要手动完成这一步骤）：`$ git stach`
 * 查看存储现场：`$ git stash lis`
-* 恢复现场两种方式：
+* 恢复现场两种方式：<br>
 ** 恢复后不删除stash内容，需`$ git stash drop`删除内容：`$ git stash apply( <stash编号，例如：stash@{0}>)`
 ** 恢复并删除恢复的stash内容：`git stash pop`
 
